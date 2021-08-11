@@ -4,12 +4,25 @@ version = 1
 name = "javascript"
 enabled = true
 
-  [analyzers.meta]
-  plugins = ["vue"]
+[analyzers.meta]
+plugins = ["vue"]
 
 [[analyzers]]
-name = "go"
+name = "ruby"
 enabled = true
 
-  [analyzers.meta]
-  import_root = "github.com/brevity-engine/filebrowser"
+[[analyzers]]
+name = "docker"
+enabled = true
+
+[[analyzers]]
+name = "shell"
+enabled = true
+
+[[analyzers]]
+name = "secrets"
+enabled = true
+
+[[transformers]]
+name = "rubocop"
+enabled = true
